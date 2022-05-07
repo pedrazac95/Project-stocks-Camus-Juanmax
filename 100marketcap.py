@@ -38,8 +38,8 @@ country_top100.remove(country_top100[0])
 
 data={'code':company_code_top100,'name':company_name_top100,'country':country_top100 }
 df=pd.DataFrame(data)
-
-df.to_csv("/data/top100MC.csv",index=False)
+df=df[df['country'].str.contains('USA')].reset_index()
+df.to_csv("data/top100MC.csv",index=False)
 
 
 

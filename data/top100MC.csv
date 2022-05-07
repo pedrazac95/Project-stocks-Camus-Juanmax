@@ -1,101 +1,63 @@
-code,name,country
-AAPL,Apple,USA
-2222.SR,Saudi Aramco,S. Arabia
-MSFT,Microsoft,USA
-GOOG,Alphabet (Google),USA
-AMZN,Amazon,USA
-TSLA,Tesla,USA
-BRK-A,Berkshire Hathaway ,USA
-FB,Meta (Facebook),USA
-TSM,TSMC,Taiwan
-UNH,UnitedHealth,USA
-NVDA,NVIDIA,USA
-JNJ,Johnson & Johnson,USA
-V,Visa,USA
-TCEHY,Tencent,China
-WMT,Walmart,USA
-XOM,Exxon Mobil,USA
-PG,Procter & Gamble,USA
-JPM,JPMorgan Chase,USA
-005930.KS,Samsung,S. Korea
-NSRGY,Nestlé,Switzerland
-MA,Mastercard,USA
-600519.SS,Kweichow Moutai,China
-CVX,Chevron,USA
-RHHBY,Roche,Switzerland
-HD,Home Depot,USA
-BAC,Bank of America ,USA
-MC.PA,LVMH,France
-LLY,Eli Lilly,USA
-KO,Coca-Cola,USA
-PFE,Pfizer,USA
-ABBV,AbbVie,USA
-NVO,Novo Nordisk,Denmark
-BABA,Alibaba,China
-BHP,BHP Group,Australia
-1398.HK,ICBC,China
-TM,Toyota,Japan
-AVGO,Broadcom,USA
-PEP,Pepsico,USA
-RELIANCE.NS,Reliance Industries,India
-ASML,ASML,Netherlands
-MRK,Merck,USA
-COST,Costco,USA
-SHEL,Shell,UK
-TMO,Thermo Fisher Scientific,USA
-CSCO,Cisco,USA
-VZ,Verizon,USA
-DIS,Walt Disney,USA
-AZN,Astrazeneca,UK
-ABT,Abbott Laboratories,USA
-ORCL,Oracle,USA
-NVS,Novartis,Switzerland
-ACN,Accenture,Ireland
-MCD,McDonald,USA
-ADBE,Adobe,USA
-DHR,Danaher,USA
-INTC,Intel,USA
-NKE,Nike,USA
-CMCSA,Comcast,USA
-OR.PA,L'Oréal,France
-CICHY,China Construction Bank,China
-WFC,Wells Fargo,USA
-CRM,Salesforce,USA
-BMY,Bristol-Myers Squibb,USA
-TCS.NS,Tata Consultancy Services,India
-ACGBY,Agricultural Bank of China,China
-TMUS,T-Mobile US,USA
-QCOM,QUALCOMM,USA
-UPS,United Parcel Service,USA
-AMD,AMD,USA
-LIN,Linde,UK
-TXN,Texas Instruments,USA
-PM,Philip Morris,USA
-MS,Morgan Stanley,USA
-PTR,PetroChina,China
-UNP,Union Pacific Corporation,USA
-T,AT&T,USA
-RY,Royal Bank Of Canada,Canada
-NEE,Nextera Energy,USA
-RTX,Raytheon Technologies,USA
-3968.HK,CM Bank,China
-PRX.AS,Prosus,Netherlands
-COP,ConocoPhillips,USA
-0941.HK,China Mobile,China
-TTE,TotalEnergies,France
-MDT,Medtronic,Ireland
-BACHF,Bank of China,China
-HON,Honeywell,USA
-CVS,CVS Health,USA
-TD,Toronto Dominion Bank,Canada
-300750.SZ,CATL,China
-HSBC,HSBC,UK
-SNY,Sanofi,France
-SCHW,Charles Schwab,USA
-LOW,Lowe's Companies,USA
-AMGN,Amgen,USA
-AXP,American Express,USA
-3690.HK,Meituan,China
-CBA.AX,Commonwealth Bank,Australia
-IBM,IBM,USA
-ANTM,Anthem,USA
+index,code,name,country
+0,AAPL,Apple,USA
+2,MSFT,Microsoft,USA
+3,GOOG,Alphabet (Google),USA
+4,AMZN,Amazon,USA
+5,TSLA,Tesla,USA
+6,BRK-A,Berkshire Hathaway ,USA
+7,FB,Meta (Facebook),USA
+9,UNH,UnitedHealth,USA
+10,NVDA,NVIDIA,USA
+11,JNJ,Johnson & Johnson,USA
+12,V,Visa,USA
+14,WMT,Walmart,USA
+15,XOM,Exxon Mobil,USA
+16,PG,Procter & Gamble,USA
+17,JPM,JPMorgan Chase,USA
+20,MA,Mastercard,USA
+22,CVX,Chevron,USA
+24,HD,Home Depot,USA
+25,BAC,Bank of America ,USA
+27,LLY,Eli Lilly,USA
+28,KO,Coca-Cola,USA
+29,PFE,Pfizer,USA
+30,ABBV,AbbVie,USA
+36,AVGO,Broadcom,USA
+37,PEP,Pepsico,USA
+40,MRK,Merck,USA
+41,COST,Costco,USA
+43,TMO,Thermo Fisher Scientific,USA
+44,CSCO,Cisco,USA
+45,VZ,Verizon,USA
+46,DIS,Walt Disney,USA
+48,ABT,Abbott Laboratories,USA
+49,ORCL,Oracle,USA
+52,MCD,McDonald,USA
+53,ADBE,Adobe,USA
+54,DHR,Danaher,USA
+55,INTC,Intel,USA
+56,NKE,Nike,USA
+57,CMCSA,Comcast,USA
+60,WFC,Wells Fargo,USA
+61,CRM,Salesforce,USA
+62,BMY,Bristol-Myers Squibb,USA
+65,TMUS,T-Mobile US,USA
+66,QCOM,QUALCOMM,USA
+67,UPS,United Parcel Service,USA
+68,AMD,AMD,USA
+70,TXN,Texas Instruments,USA
+71,PM,Philip Morris,USA
+72,MS,Morgan Stanley,USA
+74,UNP,Union Pacific Corporation,USA
+75,T,AT&T,USA
+77,NEE,Nextera Energy,USA
+78,RTX,Raytheon Technologies,USA
+81,COP,ConocoPhillips,USA
+86,HON,Honeywell,USA
+87,CVS,CVS Health,USA
+92,SCHW,Charles Schwab,USA
+93,LOW,Lowe's Companies,USA
+94,AMGN,Amgen,USA
+95,AXP,American Express,USA
+98,IBM,IBM,USA
+99,ANTM,Anthem,USA

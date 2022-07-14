@@ -1,63 +1,61 @@
-index,code,name,country
-0,AAPL,Apple,USA
-2,MSFT,Microsoft,USA
-3,GOOG,Alphabet (Google),USA
-4,AMZN,Amazon,USA
-5,TSLA,Tesla,USA
-6,BRK-A,Berkshire Hathaway ,USA
-7,FB,Meta (Facebook),USA
-9,UNH,UnitedHealth,USA
-10,NVDA,NVIDIA,USA
-11,JNJ,Johnson & Johnson,USA
-12,V,Visa,USA
-14,WMT,Walmart,USA
-15,XOM,Exxon Mobil,USA
-16,PG,Procter & Gamble,USA
-17,JPM,JPMorgan Chase,USA
-20,MA,Mastercard,USA
-22,CVX,Chevron,USA
-24,HD,Home Depot,USA
-25,BAC,Bank of America ,USA
-27,LLY,Eli Lilly,USA
-28,KO,Coca-Cola,USA
-29,PFE,Pfizer,USA
-30,ABBV,AbbVie,USA
-36,AVGO,Broadcom,USA
-37,PEP,Pepsico,USA
-40,MRK,Merck,USA
-41,COST,Costco,USA
-43,TMO,Thermo Fisher Scientific,USA
-44,CSCO,Cisco,USA
-45,VZ,Verizon,USA
-46,DIS,Walt Disney,USA
-48,ABT,Abbott Laboratories,USA
-49,ORCL,Oracle,USA
-52,MCD,McDonald,USA
-53,ADBE,Adobe,USA
-54,DHR,Danaher,USA
-55,INTC,Intel,USA
-56,NKE,Nike,USA
-57,CMCSA,Comcast,USA
-60,WFC,Wells Fargo,USA
-61,CRM,Salesforce,USA
-62,BMY,Bristol-Myers Squibb,USA
-65,TMUS,T-Mobile US,USA
-66,QCOM,QUALCOMM,USA
-67,UPS,United Parcel Service,USA
-68,AMD,AMD,USA
-70,TXN,Texas Instruments,USA
-71,PM,Philip Morris,USA
-72,MS,Morgan Stanley,USA
-74,UNP,Union Pacific Corporation,USA
-75,T,AT&T,USA
-77,NEE,Nextera Energy,USA
-78,RTX,Raytheon Technologies,USA
-81,COP,ConocoPhillips,USA
-86,HON,Honeywell,USA
-87,CVS,CVS Health,USA
-92,SCHW,Charles Schwab,USA
-93,LOW,Lowe's Companies,USA
-94,AMGN,Amgen,USA
-95,AXP,American Express,USA
-98,IBM,IBM,USA
-99,ANTM,Anthem,USA
+code,name,country
+AAPL,Apple,USA
+MSFT,Microsoft,USA
+GOOG,Alphabet (Google),USA
+AMZN,Amazon,USA
+TSLA,Tesla,USA
+BRK-A,Berkshire Hathaway ,USA
+FB,Meta (Facebook),USA
+JNJ,Johnson & Johnson,USA
+UNH,UnitedHealth,USA
+V,Visa,USA
+WMT,Walmart,USA
+NVDA,NVIDIA,USA
+XOM,Exxon Mobil,USA
+PG,Procter & Gamble,USA
+JPM,JPMorgan Chase,USA
+CVX,Chevron,USA
+MA,Mastercard,USA
+HD,Home Depot,USA
+PFE,Pfizer,USA
+BAC,Bank of America ,USA
+KO,Coca-Cola,USA
+LLY,Eli Lilly,USA
+ABBV,AbbVie,USA
+PEP,Pepsico,USA
+AVGO,Broadcom,USA
+MRK,Merck,USA
+COST,Costco,USA
+TMO,Thermo Fisher Scientific,USA
+VZ,Verizon,USA
+CSCO,Cisco,USA
+DIS,Walt Disney,USA
+ABT,Abbott Laboratories,USA
+ORCL,Oracle,USA
+CMCSA,Comcast,USA
+ADBE,Adobe,USA
+MCD,McDonald,USA
+INTC,Intel,USA
+DHR,Danaher,USA
+NKE,Nike,USA
+BMY,Bristol-Myers Squibb,USA
+PM,Philip Morris,USA
+CRM,Salesforce,USA
+WFC,Wells Fargo,USA
+UPS,United Parcel Service,USA
+TMUS,T-Mobile US,USA
+TXN,Texas Instruments,USA
+QCOM,QUALCOMM,USA
+UNP,Union Pacific Corporation,USA
+AMD,AMD,USA
+T,AT&T,USA
+MS,Morgan Stanley,USA
+RTX,Raytheon Technologies,USA
+NEE,Nextera Energy,USA
+HON,Honeywell,USA
+AMGN,Amgen,USA
+CVS,CVS Health,USA
+COP,ConocoPhillips,USA
+LOW,Lowe's Companies,USA
+SCHW,Charles Schwab,USA
+IBM,IBM,USA

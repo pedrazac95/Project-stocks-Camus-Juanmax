@@ -2,15 +2,20 @@
 import pandas as pd
 import numpy as np
 from scipy import signal
+import json
 
 #get finantial data
 import yfinance as yf
+import requests
+from bs4 import BeautifulSoup
 
 #tools
 from datetime import datetime,timedelta
 
 #visualization
 import plotly.graph_objects as go
+
+from dollar_cop import get_dollar_to_cop
 
 today_date=datetime.now()
 
@@ -28,11 +33,18 @@ def get_name_of_stock(stock_code):
     return str(stock_code)+'-'+str(name)
 
 def get_stock_price(stock_code):
-    return str(round(get_data(stock_code).loc[0,"Close"],3)) + ' USD'
+    pd=get_data(stock_code)
+    l=len(pd)
+    return str(round(pd.loc[l-1,"Close"],3)) + ' USD'
 
-def get_stock_price_cop(price):
-    
-    return str(round(get_data(stock_code).loc[0,"Close"],3)) + ' USD'
+def get_stock_price_cop(stock_code):
+    pd=get_data(stock_code)
+    l=len(pd)
+    price=pd.loc[l-1,"Close"]
+
+    Cop_rate=float(get_dollar_to_cop())
+ 
+    return str(round(price*Cop_rate,2)) + ' COP'
 
 
 def get_data(stock_code):
@@ -45,6 +57,7 @@ def get_data(stock_code):
                       end=today_date, 
                       progress=False,)
     stock_value_df =pd.DataFrame(stock_value_df).reset_index()
+
     return stock_value_df 
 
 def filtered_by_date(df,start_date,end_date):
@@ -79,7 +92,12 @@ def graph_stock(stock,star_date,end_date):
     df_period=filtered_by_date(df,star_date,end_date)
     mean_period=df_period['Close'].mean()
     minimuns_data=minimuns_2nd_order(df_period,'Close')
-    mean_minimuns=minimuns_data['y'].mean()
+    mean_minimuns=round(minimuns_data['y'].mean(),3)
+   
+    l=len(df_period)
+    stock_price=round(df_period.loc[l-1,"Close"],3)
+    growth_potencial= round(mean_minimuns - stock_price,2)
+    per_growth_potencial=round((growth_potencial/ stock_price)*100,2)
 
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=df_period["Date"], y=df_period["Close"],mode='lines+markers', name="Year Close Serie"))
@@ -87,7 +105,7 @@ def graph_stock(stock,star_date,end_date):
     fig.add_hline(y=mean_period, name=" Year mean")
     fig.add_hline(y=mean_minimuns, annotation_text="Minimuns mean", line=dict(color='firebrick', width=4, dash='dash'))
     #fig.write_image("chart.png")
-    return fig 
+    return (fig, stock_price, growth_potencial,per_growth_potencial) 
 
 #Select Stock code
 #stock="AAPL"

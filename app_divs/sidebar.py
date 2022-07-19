@@ -36,8 +36,10 @@ stock_pd=pd.read_csv("data/top100MC.csv")
 stocks_list=stock_pd['name'].to_list()
 dropdown=dcc.Dropdown(
         id="stock_dropdown",
+        value="Alphabet (Google)",
         options=stocks_list,
-        placeholder="Select Stock to Track"
+        searchable=True,
+        #placeholder="Select Stock to Track"
         )
 ##############################################################################
 # Date Picker Card
@@ -55,17 +57,20 @@ date_picker=dcc.DatePickerRange(
 #############################################################################
 # Sidebar Layout
 #############################################################################
-sidebar = html.Div(
-    [
-        #DS4A_Img,  # Add the DS4A_Img located in the assets folder
-        html.Hr(),html.Hr(),html.Hr(),
-        html.H5("Select the stock you want to track"),
-        dropdown,
-        html.Hr(),html.Hr(),html.Hr(),html.Hr(),html.Hr(),html.Hr(),
-        html.Hr(),html.Hr(),html.Hr(),html.Hr(),html.Hr(),html.Hr(),
-        html.H5("Pick the dates"),
-        date_picker,
-
-    ],
-    className="ds4a-sidebar",
+sidebar = html.Div([
+    dbc.Row([
+        dbc.Col(
+            html.H5([
+                "Select the sector",
+            ])
+        ),
+        dbc.Col(
+            html.H5([
+                "Select the stock you want to track",
+                dropdown,
+            ])
+        ),
+    ])
+        
+],className="ds4a-sidebar",
 )

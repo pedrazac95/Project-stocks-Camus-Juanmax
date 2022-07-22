@@ -28,6 +28,26 @@ m1_early_date= today_date-timedelta(days=1*31)  # 1mes
 
 stock_pd=pd.read_csv("data/top100MC.csv")
 
+def get_start_date(slider_value):
+    
+    if slider_value == 3:
+        start_date=datetime.now()-timedelta(days=6*31)
+    elif slider_value == 0:
+        start_date=datetime.now()-timedelta(days=5)
+    elif slider_value == 1:
+        start_date=datetime.now()-timedelta(days=31)
+    elif slider_value == 2:
+        start_date=datetime.now()-timedelta(days=3*31)
+    elif slider_value == 4:
+        start_date=datetime.now()-timedelta(days=365)
+    elif slider_value == 5:
+        start_date=datetime.now()-timedelta(days=365*5)
+    else:
+        start_date=datetime.now()-timedelta(days=365*20)
+    
+    return start_date
+
+
 def get_name_of_stock(stock_code):
     name = stock_pd[stock_pd["code"]==stock_code].iloc[0,1]
     return str(stock_code)+'-'+str(name)

@@ -65,14 +65,17 @@ app.layout = html.Div([
     ],
     [
         Input("stock_dropdown", "value"),
+        Input("term_slider", "value")
     ],
 )
-def change_stock(stock_dropdown="Alphabet (Google)"):
+def change_stock(stock_dropdown="Alphabet (Google)",term_slider=3):
     #name = stock_pd[stock_pd["code"]==stock_code].iloc[0,1]
     code = stock_pd[stock_pd["name"]==stock_dropdown].iloc[0,0]
     stock_name=analysis.get_name_of_stock(code)
     price_cop=analysis.get_stock_price_cop(code)
-    line_fig,price,gp,pgp=analysis.graph_stock(code, datetime.now()-timedelta(days=6*31), datetime.now())
+    end_date=datetime.now()
+    start_date=analysis.get_start_date(term_slider) 
+    line_fig,price,gp,pgp=analysis.graph_stock(code, start_date, end_date)
     
     return [stock_name,line_fig, str(price)+' USD', price_cop, str(gp)+ ' USD', str(pgp)+ '%']
 
